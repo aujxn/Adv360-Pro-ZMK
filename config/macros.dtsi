@@ -1,10 +1,30 @@
-lm: lm {
-    label = "LAYER_MOD";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings
-        = <&macro_press &mo 2 &kp LSHFT>
-        , <&macro_pause_for_release>
-        , <&macro_release &mo 2 &kp LSHFT>
-        ;
+macro_window: macro_window{
+compatible = "zmk,behavior-macro";
+label = "macro_window";
+#binding-cells = <0>;
+bindings = <&kp ESC>, <&kt RCTRL>, <&kp W>, <&kt RCTRL>, <&kp W>;
+};
+macro_quit_all: macro_quit_all{
+compatible = "zmk,behavior-macro";
+label = "macro_quit_all";
+#binding-cells = <0>;
+bindings = <&kp ESC>, <&kp COLON>, <&kp Q>, <&kp A>, <&kp ENTER>;
+};
+macro_tab_left: macro_tab_left{
+compatible = "zmk,behavior-macro";
+label = "macro_tab_left";
+#binding-cells = <0>;
+bindings = <&kp ESC>, <&kp G>, <&kt RSHIFT>, <&kp T>, <&kt RSHIFT>;
+};
+macro_tab_right: macro_tab_right{
+compatible = "zmk,behavior-macro";
+label = "macro_tab_right";
+#binding-cells = <0>;
+bindings = <&kp ESC>, <&kp G>, <&kp T>;
+};
+macro_save_all: macro_save_all{
+compatible = "zmk,behavior-macro";
+label = "macro_save_all";
+#binding-cells = <0>;
+bindings = <&kp ESCAPE>, <&kp COLON>, <&kp W>, <&kp A>, <&kp ENTER>;
 };
