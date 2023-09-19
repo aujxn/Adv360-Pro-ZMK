@@ -69,11 +69,11 @@
 
         layer_vim {
             bindings = <
- &trans  &trans         &trans           &trans            &trans  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans         &trans  &macro_tab_left  &macro_tab_right  &trans            &trans                                                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &macro_window  &macro_save_all           &kp ESC  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans         &trans           &trans   &macro_quit_all  &trans                            &trans                  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans         &trans           &trans            &trans                    &trans  &trans  &trans                  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+ &trans  &trans         &trans           &trans            &trans  &trans            &trans                                                  &trans  &trans        &trans      &trans  &trans  &trans  &trans
+ &trans  &trans         &trans  &macro_tab_left  &macro_tab_right  &trans            &trans                                                  &trans  &trans        &trans      &trans  &trans  &trans  &trans
+ &trans  &trans  &macro_window  &macro_save_all           &kp ESC  &trans            &trans  &trans  &trans                  &trans  &trans  &trans  &trans        &trans      &trans  &trans  &trans  &trans
+ &trans  &trans         &trans           &trans   &macro_quit_all  &trans                            &trans                  &trans                  &trans  &macro_cdown  &macro_cup  &trans  &trans  &trans
+ &trans  &trans         &trans           &trans            &trans                    &trans  &trans  &trans                  &trans  &trans  &trans                &trans      &trans  &trans  &trans  &trans
             >;
         };
 
