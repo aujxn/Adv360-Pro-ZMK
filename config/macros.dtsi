@@ -40,3 +40,13 @@ label = "macro_save_all";
 #binding-cells = <0>;
 bindings = <&kp ESCAPE>, <&kp COLON>, <&kp W>, <&kp A>, <&kp ENTER>;
 };
+macro_lm: macro_lm {
+    label = "LAYER_MOD";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings
+        = <&macro_press &mo 2 &kp LSHFT>
+        , <&macro_pause_for_release>
+        , <&macro_release &mo 2 &kp LSHFT>
+        ;
+};
